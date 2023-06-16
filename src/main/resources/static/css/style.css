@@ -92,3 +92,9 @@ a {
     flex-direction: row;
     margin: 10px 0;
 }
+
+#opinion-content form div {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
