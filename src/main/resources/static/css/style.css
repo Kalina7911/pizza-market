@@ -98,3 +98,13 @@ a {
     flex-direction: row;
     margin: 10px 0;
 }
+
+.opinion-name {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+}
+
+.opinion-content {
+    font-family:Courier,monospace;
+    font-weight: 100;
+}

@@ -30,7 +30,6 @@ public class OpinionController {
 
 
 
-
         @GetMapping("/opinion")
         public String  opinionPage (Model model){
 

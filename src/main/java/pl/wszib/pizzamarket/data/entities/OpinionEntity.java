@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 public class OpinionEntity {
 
     @Id
+
     @GeneratedValue
     @Column(name = "id")
     private Long id;
