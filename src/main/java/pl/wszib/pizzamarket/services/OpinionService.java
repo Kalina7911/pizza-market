@@ -27,8 +27,8 @@ public class OpinionService {
 
     }
 
-    public List<OpinionEntity> getAllOpinions() {
-        return opinionRepository.findAll();
+    public List<OpinionModel> getAllOpinions() {
+        return opinionRepository.findAll().stream().map(opinionEntity -> OpinionMapper.toModel(opinionEntity)).toList();
     }
 }
 

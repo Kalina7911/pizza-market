@@ -7,10 +7,10 @@
 
 
     <div>
-      <p th:text="${opinion.id}"></p>
-      <p th:text="${opinion.name}"></p>
-      <p th:text="${opinion.content}"></p>
-
+      <tr th:each="opinion2: ${opinions}">
+      <p th:text="${opinion2.name}"></p>
+      <p th:text="${opinion2.content}"></p>
+      </tr>
     </div>
     <form action="#" th:action="@{/opinion}" th:object="${opinion}" method="post">
 

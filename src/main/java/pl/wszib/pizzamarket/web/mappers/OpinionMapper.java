@@ -14,4 +14,13 @@ public class OpinionMapper {
 
         return entity;
     }
+
+    public static OpinionModel toModel(OpinionEntity opinionEntity) {
+
+        OpinionModel model = new OpinionModel();
+        model.setContent(opinionEntity.getContent());
+        model.setName(opinionEntity.getName());
+
+        return model;
+    }
 }

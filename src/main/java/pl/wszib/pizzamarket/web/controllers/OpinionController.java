@@ -34,15 +34,18 @@ public class OpinionController {
         @GetMapping("/opinion")
         public String  opinionPage (Model model){
 
-       List<OpinionEntity> opinionEntities = opinionService.getAllOpinions();
+       List<OpinionModel> opinions = opinionService.getAllOpinions();
 
         model.addAttribute("opinion", new OpinionModel());
+        model.addAttribute("opinions", opinions);
         return "opinionPage";
 
         }
 
         @PostMapping("/opinion")
     public String opinionSubmit (@ModelAttribute OpinionModel opinionModel, Model model ){
+
+        opinionService.saveOpinion(opinionModel);
 
         model.addAttribute("opinion", opinionModel);
         return "opinionPage";
