@@ -16,7 +16,7 @@
       <h6 th:text="${opinionIteration.content}" ></h6>
       </tr>
     </div>
-    <form action=""  th:action="@{/opinion}" th:object="${opinion}"  method="post">
+    <form action="" th:object="${opinion}"  method="post">
 
       <h3>Dodaj nową opinię</h3>
     <div>
@@ -27,7 +27,7 @@
     </div>
 
       <div>
-        <button class="btn">Dodaj</button>
+        <button type="submit" class="btn">Dodaj</button>
       </div>
 
     </form>
