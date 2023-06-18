@@ -15,6 +15,7 @@ public class OpinionService {
 
 
     public OpinionService(OpinionRepository opinionRepository) {
+
         this.opinionRepository = opinionRepository;
     }
 

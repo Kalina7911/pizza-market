@@ -47,7 +47,7 @@ public class OpinionController {
         opinionService.saveOpinion(opinionModel);
 
         model.addAttribute("opinion", opinionModel);
-        return "opinionPage";
+        return "redirect:/opinion";
         }
 
     }
